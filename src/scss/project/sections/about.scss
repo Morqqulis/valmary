@@ -1,0 +1,72 @@
+.about {
+    position: relative;
+    z-index: 1;
+    @include adaptiveValue("margin-bottom", 175, 170);
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @include adaptiveValue("gap", 120, 10);
+    }
+
+    &__image {
+        width: auto;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+        font-weight: 500;
+        font-size: 25px;
+        color: #858585;
+    }
+
+    &__title {
+        margin-bottom: 70px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 111%;
+        letter-spacing: -0.4px;
+        white-space: pre-line;
+
+        span {
+            color: $g;
+        }
+    }
+
+    &__text-box {
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        white-space: pre-line;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        &:first-child{
+            transform: translate(0px,-5px);
+        }
+        &:nth-child(2) {
+            transform: translate(0px, 10px);
+        }
+    }
+
+    &__link {
+        position: relative;
+        align-self: end;
+        background: url('@img/about/link.svg') right 80% no-repeat;
+        padding-right: 106px;
+        width: fit-content;
+        font-weight: 500;
+        font-size: 25px;
+        color: $g;
+    }
+}

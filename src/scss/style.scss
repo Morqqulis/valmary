@@ -1,0 +1,27 @@
+// Настройки Проекта
+@import "settings";
+
+// Подключение стилей отдельных секций
+@import "project/sections/header";
+@import "project/sections/hero";
+@import "project/sections/education";
+@import "project/sections/about";
+@import "project/sections/training";
+@import "project/sections/models";
+@import "project/sections/performance";
+@import "project/sections/why";
+@import "project/sections/special";
+@import "project/sections/callback";
+
+
+@import "project/sections/footer";
+
+// Подключение стилей отдельных блоков
+@import "project/blocks/stats";
+@import "project/blocks/filter";
+@import "project/venobox.min.css";
+
+// Подключение стилей отдельных страниц
+
+
+@import "project/pages/main";

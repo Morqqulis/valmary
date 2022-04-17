@@ -1,0 +1,61 @@
+.special {
+    @include adaptiveValue("margin-bottom", 175, 170);
+
+    &__container {}
+
+    &__title {
+        margin-bottom: 75px;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__slider {
+        padding-bottom: 100px;
+
+    }
+
+    &__wrapper {}
+
+    &__slide {}
+
+    &__img {}
+
+    &__pagination {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        display: flex;
+        grid-gap: 15px;
+
+        span {
+            width: 15px;
+            height: 15px;
+            background-color: $lg;
+            border-radius: 50%;
+        }
+
+    }
+
+    &__button-prev {
+        position: absolute;
+        top: 40.5%;
+        left: -28px;
+        background: url('@img/education/left.svg') no-repeat;
+        width: 16px;
+        height: 24px;
+        transform: translate(0px, -40%);
+    }
+
+    &__button-next {
+        position: absolute;
+        top: 40.5%;
+        right: -28px;
+        background: url('@img/education/right.svg') no-repeat;
+        width: 16px;
+        height: 24px;
+        transform: translate(0px, -40%);
+    }
+}

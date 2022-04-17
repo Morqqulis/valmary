@@ -1,0 +1,104 @@
+.card {
+    color: rgba($color: #424242, $alpha: .8);
+    max-width: 360px;
+
+    &__wrapper {
+        padding: 25px 14px 0px 16px;
+        background: #fff url('@img/education/bird.svg') 95% 4.5% no-repeat;
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: -0.4px;
+        margin-bottom: 22px;
+
+      
+    }
+
+    &__format {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 27px;
+        padding: 9px 0 9px 0;
+        color: rgba(#fff, $alpha: .8);
+        border-radius: 9px;
+        max-width: 167px;
+        white-space: nowrap;
+        text-align: center;
+
+       
+        
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__desc {
+        display: flex;
+        gap: 17px;
+        justify-content: space-between;
+        margin-bottom: 55px;
+        align-items: flex-end;
+    }
+
+    &__info-desc {
+        transform: translate(10px, -10px);
+        position: relative;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: $ral;
+        max-width: 164px;
+        white-space: pre-line;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 20%;
+            width: 2px;
+            height: 104px;
+            background-color: rgba($color: #5351C4, $alpha: .8);
+
+        }
+    }
+
+    &__img-desc {
+        
+    }
+
+    &__places {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 15px 0;
+
+        
+    }
+}
+
+.card--blue {}
+
+.card--green {}
+
+.card--aqua {}

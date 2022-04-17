@@ -1,0 +1,135 @@
+.performance {
+    @include adaptiveValue("margin-bottom", 175, 170);
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 26px;
+        margin-bottom: 90px;
+    }
+
+    &__slider {
+        padding-bottom: 77px;
+        margin-left: 11px;
+    }
+
+    &__wrapper {
+        display: flex;
+        position: relative;
+    }
+
+    &__slide {
+        max-width: 520px;
+    }
+
+    &__img {}
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        padding-left: 29px;
+        padding-bottom: 38px;
+        filter: drop-shadow(0px 2px 20px rgba(66, 66, 66, 0.15));
+    }
+
+    &__date {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+    &__prof {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 293px;
+        margin-bottom: 21px;
+    }
+
+    &__name {
+        max-width: 272px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #424242;
+        opacity: 0.8;
+    }
+
+    &__price {
+        height: 132px;
+        width: 153px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #ECF9EB;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        opacity: 0.8;
+    }
+
+    &__link {
+        background: url('@img/performance/arrow-white.svg') center no-repeat;
+        background-color: $g;
+        max-width: 153px;
+        max-height: 96px;
+        height: 100%;
+        width: 100%;
+        display: block;
+        margin-left: 2px;
+    }
+
+    &__pagination {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0px);
+
+        span {
+            background-color: #B7ECB1;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+
+
+        }
+    }
+
+    &__button-prev {
+        position: absolute;
+        top: 52.5%;
+        left: -7px;
+        background: url('@img/education/left.svg') center no-repeat;
+        width: 16px;
+        height: 24px;
+        transform: translate(-50%, 0px);
+    }
+
+    &__button-next {
+        position: absolute;
+        top: 52.5%;
+        right: -37px;
+        background: url('@img/education/right.svg') center no-repeat;
+        width: 16px;
+        height: 24px;
+        transform: translate(-50%, 0px);
+    }
+}

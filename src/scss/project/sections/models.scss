@@ -1,0 +1,42 @@
+.models {
+    @include adaptiveValue("margin-bottom", 175, 170);
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 75px;
+    }
+
+    &__column {}
+
+    &__title {
+        margin-bottom: 75px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 115%;
+        letter-spacing: -0.4px;
+        color: $g;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 31px;
+        opacity: 0.8;
+    }
+
+    &__link {
+        margin-top: 70px;
+        background-color: $g;
+        padding: 25px;
+        max-width: 385px;
+        width: 100%;
+        color: #fff;
+        font-size: 23px;
+    }
+
+    &__img {}
+}

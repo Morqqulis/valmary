@@ -1,0 +1,414 @@
+.education {
+    z-index: 1;
+    position: relative;
+    @include adaptiveValue("margin-bottom", 175, 170);
+
+    &__container {}
+
+    &__title {
+        @include adaptiveValue("margin-bottom", 77, 75);
+
+        .courses-body & {
+            margin: 57px 0px 27px 0px;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 42px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &__subtitle {
+        .main-page-body & {
+            display: none;
+        }
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        position: relative;
+        padding-left: 74px;
+        margin-bottom: 30px;
+
+        &::before {
+            content: '';
+            background: url('@img/education/bird.svg') left no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            transform: translate(-74px, 0px);
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__slider {
+        margin-right: 5px;
+
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 95px;
+        justify-content: space-between;
+        padding-left: 20px;
+
+        .education-second & {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 60px;
+        }
+    }
+
+    &__item {
+        color: rgba($color: #424242, $alpha: .8);
+        max-width: 360px;
+
+    }
+
+    &__item-wrapper {
+        padding: 25px 14px 0px 16px;
+        background: #fff url('@img/education/bird.svg') 95% 4.5% no-repeat;
+    }
+
+    &__heading-item {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 14px;
+
+    }
+
+    &__name-item {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: -0.4px;
+        margin-bottom: 22px;
+
+        .card--blue & {
+            color: $b;
+        }
+
+        .card--green & {
+            color: $g;
+            white-space: pre-line;
+        }
+
+        .card--aqua & {
+            color: $brz2;
+            white-space: pre-line;
+        }
+    }
+
+    &__format-item {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 27px;
+        padding: 9px 0 9px 0;
+        color: rgba(#fff, $alpha: .8);
+        border-radius: 9px;
+        max-width: 167px;
+        white-space: nowrap;
+        text-align: center;
+
+        .card--blue & {
+            background-color: $b;
+        }
+
+        .card--green & {
+            background-color: $g;
+        }
+
+        .card--aqua & {
+            background-color: $brz2;
+        }
+    }
+
+    &__date-item {
+        font-weight: 600;
+        font-size: 20px;
+
+    }
+
+    &__desc-item {
+        display: flex;
+        gap: 17px;
+        justify-content: space-between;
+        margin-bottom: 55px;
+        align-items: flex-end;
+    }
+
+    &__info-desc {
+        transform: translate(10px, -10px);
+        position: relative;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: $ral;
+        max-width: 164px;
+        white-space: pre-line;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 20%;
+            width: 2px;
+            height: 104px;
+            background-color: rgba($color: #5351C4, $alpha: .8);
+
+        }
+    }
+
+    &__img-desc {
+        .card--green & {
+            transform: translate(-8px, 0px);
+        }
+    }
+
+    &__places-item {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__button-item {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 15px 0;
+    }
+
+    &__pagination {
+        display: flex;
+        gap: 16px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+
+        span {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #B7ECB1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $g;
+        }
+
+        .education-second & {
+            display: none;
+        }
+    }
+
+    &__button-prev {
+        background: url('@img/education/left.svg') left center no-repeat;
+        width: 16px;
+        height: 24px;
+        position: absolute;
+        top: 40.5%;
+        left: -28px;
+        transform: translate(0px, -50%);
+
+        .education-second & {
+            display: none;
+        }
+    }
+
+    &__button-next {
+        background: url('@img/education/right.svg') right center no-repeat;
+        position: absolute;
+        top: 40.5%;
+        right: -45px;
+        transform: translate(0px, -50%);
+        width: 16px;
+        height: 24px;
+
+        .education-second & {
+            display: none;
+        }
+    }
+
+    &__item--blue {
+        .education__name-item {
+            color: $b;
+        }
+
+        .education__format-item {
+            background-color: $b;
+        }
+
+        .education__button-item {
+            background-color: $b;
+            padding: 17px 0;
+
+            &:last-child {
+                color: $b;
+                background-color: rgba(83, 81, 196, 0.1);
+            }
+        }
+    }
+
+    &__item--green {
+        .education__name-item {
+            color: $g;
+            white-space: pre-line;
+        }
+
+        .education__format-item {
+            background-color: $g;
+        }
+
+        .education__button-item {
+            background-color: $g;
+            padding: 17px 0;
+
+            &:last-child {
+                color: $g;
+                background-color: #ECF9EB;
+            }
+        }
+
+        .education__img-desc {
+            transform: translate(-8px, 0px);
+        }
+    }
+
+    &__item--aqua {
+        padding-left: 5px;
+
+        .education__name-item {
+            color: $brz2;
+            white-space: pre-line;
+        }
+
+        .education__format-item {
+            background-color: $brz2;
+        }
+
+        .education__button-item {
+            background-color: $brz2;
+            padding: 17px 0;
+            margin-top: -4px;
+
+            &:last-child {
+                color: $brz2;
+                background: rgba(0, 168, 150, 0.1);
+            }
+        }
+
+        .education__desc-item {
+            transform: translate(0px, -8px);
+        }
+    }
+
+
+
+    &__item {}
+
+    &__item--video {}
+
+    &__button-item {}
+
+
+    .education-new {
+
+        &__link {
+            position: relative;
+            display: block;
+
+            &::before {
+                content: '';
+                background: rgba(66, 66, 66, 0.5);
+                opacity: 0.6;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+        }
+
+        &__img {
+            display: block;
+            position: relative;
+        }
+
+        &__icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+
+            circle,
+            path {
+                transition: all 0.3s ease 0s;
+            }
+
+            &:hover path {
+                fill: red;
+            }
+        }
+
+        &__desc {
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translate(-50%, -0%);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            font-family: $ral;
+            color: #FFFFFF;
+            opacity: 0.8;
+            z-index: 1;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 25px;
+            width: 100%;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #424242;
+            flex-grow: 1;
+            margin-bottom: auto;
+
+        }
+
+        &__name {
+
+
+
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: #424242;
+        }
+    }
+
+
+
+
+}

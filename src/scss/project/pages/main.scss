@@ -1,0 +1,19 @@
+//====================================================================================================
+// Подключение стилей отдельных секций
+@import "../sections/header";
+@import "../sections/hero";
+@import "../sections/education";
+@import "../sections/about";
+@import "../sections/training";
+@import "../sections/models";
+@import "../sections/performance";
+@import "../sections/why";
+@import "../sections/special";
+@import "../sections/callback";
+
+
+@import "../sections/footer";
+
+// Подключение стилей отдельных блоков
+@import "../blocks/stats";
+//====================================================================================================

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Переименовать имя страницы -->
+	@@include('html/add/_head.htm',{
+	"title":"Главная страница"
+	})
+	<body class="main-page-body">
+		<div class="wrapper">
+			@@include('html/sections/_header.htm',{})
+			<main class="page">
+				<div class="ddd">
+					@@include('html/sections/_hero.htm',{})
+					@@include('html/sections/_education.htm',{})
+				</div>
+				@@include('html/sections/_about.htm',{})
+				@@include('html/sections/_training.htm',{})
+				@@include('html/sections/_models.htm',{})
+				@@include('html/sections/_performance.htm',{})
+				@@include('html/sections/_why.htm',{})
+				@@include('html/sections/_special.htm',{})
+				@@include('html/sections/_callback.htm',{})
+				
+				
+			</main>
+			@@include('html/sections/_footer.htm',{})
+		</div>
+		
+		@@include('html/add/_js.htm',{})
+	</body>
+</html>
+

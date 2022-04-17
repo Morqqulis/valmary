@@ -1,0 +1,77 @@
+.why {
+    @include adaptiveValue("margin-bottom", 165, 160);
+
+    &__container {}
+
+    &__title {
+        margin-bottom: 85px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        counter-reset: num;
+    }
+
+    &__item {
+        padding: 40px 15px 12px 30px;
+        counter-increment: num;
+        display: table-cell;
+        position: relative;
+        min-height: 315px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 20px rgba(66, 66, 66, 0.15);
+        max-width: 380px;
+
+        &::before {
+            font-family: $ral;
+            display: table-cell;
+            content: counter(num, decimal-leading-zero);
+            font-weight: 500;
+            font-size: 180px;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+
+            color: rgba(85, 166, 48, 0.25);
+
+        }
+
+        &:nth-child(even) {
+            background-color: $lg;
+
+            &::before {
+                top: -20px;
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        &:last-child {
+            h5 {
+                margin-bottom: 18px;
+                margin-top: -14px;
+            }
+        }
+    }
+
+    &__heading {
+
+        margin-bottom: 33px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
+        max-width: 220px;
+
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #1C1E23;
+        opacity: 0.8;
+       
+    }
+}
